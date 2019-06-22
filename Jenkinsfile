@@ -4,6 +4,11 @@ pipeline {
     agent any
 
     stages {
+        stage('check ansible') {
+            steps {
+            sh 'ansible --version'
+            }
+        }
         stage('instalacja ansible') {
             steps {
                 echo 'instalacja ansible'

@@ -1,3 +1,5 @@
 
 to instalacja ansible
-toto
+
+wyglada na to, ze na serwerze .j. nie ma dostepu do /bin/yum wiec nie mozna nic zainstalowac
+
