@@ -2,7 +2,9 @@
 // to komewntarz
 pipeline {
     agent any
-
+    environment {
+       PATH="/bin:/sbin:/usr/bin"
+    }
     stages {
         stage('check ansible') {
             steps {
