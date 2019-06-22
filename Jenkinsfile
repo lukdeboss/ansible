@@ -8,6 +8,8 @@ pipeline {
     stages {
         stage('check ansible') {
             steps {
+            sh 'ls -al /bin'
+            sh 'ls -al /usr/bin'        
             sh 'ansible --version'
             }
         }
