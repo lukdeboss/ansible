@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('instalacja ansible') {
             steps {
-                echo 'robie play'
+                echo 'instalacja ansible'
+                sh 'setenforce Permissive'     //wylaczenie selinux
                 sh 'yum -y install ansible'
             }
         }
