@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('check ansible') {
             steps {
+            ansiblePlaybook(inventory: 'inventory', playbook: 'playbook.yaml'
             sh 'uname -a'
             sh 'ls -al /bin'
             sh 'ls -al /usr/bin'        

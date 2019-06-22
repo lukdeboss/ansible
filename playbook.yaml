@@ -1,0 +1,8 @@
+
+---
+- hosts: localhost
+  tasks:
+  - name: sprawdz
+    shell: ls
+
+
