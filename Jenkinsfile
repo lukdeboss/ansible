@@ -20,8 +20,8 @@ pipeline {
                 echo 'instalacja ansible'
                 sh 'ls -al'     //wylaczenie selinux
                 sh 'ls -al /'
-                sh "ls -al /bin/yum /sbin/yum"
-                sh 'yum -y install ansible'
+                sh "ls -al /bin/yum"
+                sh 'yum -y update ansible'
             }
         }
         stage('Test') {
