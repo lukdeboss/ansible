@@ -1,7 +1,7 @@
 
 // to komewntarz
 pipeline {
-    agent { label: 'glowne' }
+    agent { label 'glowne' }
     environment {
        PATH="/bin:/sbin:/usr/bin"
     }
